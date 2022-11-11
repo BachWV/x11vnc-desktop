@@ -141,7 +141,7 @@ RUN apt-get update && \
 
 RUN apt-get update && \	
     apt-get install -y openjdk-17-jdk \	
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
     
 ########################################################
 # Customization for user and location
